@@ -11,8 +11,8 @@ jobs:
 
       - uses: takumakume/trivy-misconf-scan@fix-image
         with:
-          policy-repository: 'github.com/mrtc0-sandbox/trivy-sandbox/policies'
-          policy-directory: 'policy'
+          policy-repository: 'github.com/mrtc0-sandbox/trivy-sandbox'
+          policy-directory: 'policies/policy'
           namespaces: 'user'
         env:
           REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
