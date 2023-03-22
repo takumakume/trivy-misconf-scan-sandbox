@@ -1,0 +1,1 @@
+# trivy-misconf-scan-sandbox
